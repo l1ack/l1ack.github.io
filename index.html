@@ -1,917 +1,1885 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html lang="en">
 
-<head>
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Yunhe Wang's Homepage</title>
+<title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Yunhe Wang is currently a senior researcher at Huawei Noah's Ark Lab">
-  <meta name="keywords" content="Yunhe Wang, 王云鹤, wangyunhe, Yunhe, Wang, Deep Learning, Huawei, PKU, Computer, Vision">
-  <meta name="author" content="Yunhe Wang" />
+  Jindong  Wang
 
-  <link rel="stylesheet" href="w3.css">
 
-  <style>
-  .w3-sidebar a {font-family: "Roboto", sans-serif}
-  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-  </style>
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
 
-  <link rel="icon" type="image/png" href="images/icons.png">
-  <!--
-  <script src="jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-        // Store hash
-        var hash = this.hash;
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  //-->
+<!-- Open Graph -->
 
-</head>
 
+<!-- Bootstrap & MDB -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/mdb.min.css">
 
-<body class="w3-content" style="max-width:1000px">
-  <table>
-    <tr>
-      <td><iframe name="left" src="index.html"></iframe></td>
-      <!-- <td><iframe name="right" src="right.html"></iframe></td> -->  
-    </tr>
-  </table>
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>YUNHE</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#news" class="w3-bar-item w3-button">News</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-    <a href="#talks" class="w3-bar-item w3-button">Talks</a>
-    <a href="#publications" class="w3-bar-item w3-button">Research</a>
-    <a href="#service" class="w3-bar-item w3-button">Services</a>
-    <a href="#award" class="w3-bar-item w3-button">Awards</a>
-  </div>
-</nav>
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24">YUNHE</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-  </div>
-</header>
+<!-- Code Syntax Highlighting -->
+<!-- <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" /> -->
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Styles -->
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:150px">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>">
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="jindongwang.github.io/">
 
-<!-- The Home Section -->
-    <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/Yunhe_new.jpg">
-      <h1>Yunhe Wang</h1>
-        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am a senior researcher at <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc. Before that, I did my PhD at school of EECS, <a href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by Prof. <a href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and Prof. <a href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a href="https://en.xidian.edu.cn/">Xidian University</a>.
-        </p>
-        <p class="w3-center">
-          <a href="mailto:yunhe.wang@huawei.com">Email</a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?user=isizOkYAAAAJ">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://www.zhihu.com/people/YunheWang"> Zhi Hu </a> &nbsp/&nbsp
-          <a href="https://dblp.org/pid/63/8217-1.html"> DBLP </a>
-        </p>
-        </tbody></table>
-  </div>
 
-<!-- The News Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="news">
-   <h2>News</h2>
-      <p><li> 05/2021, 2 papers have been accepted by <a href="https://icml.cc/">ICML 2022</a>. </li></p>
-      <p><li> 04/2022, 8 papers have been accepted by <a href="https://openaccess.thecvf.com/CVPR2022">CVPR 2022</a>. </li></p>
-   	  <p><li> 02/2022, Our suvery paper on vision transformer has been accepted by <a href="https://arxiv.org/pdf/2012.12556">IEEE TPAMI</a>.</li></p>
-      <p><li> 09/2021, 10 papers have been accepted by <a href="https://nips.cc/Conferences/2021">NeurIPS 2021</a>.</li></p>
-      <p><li> 09/2021, The journal version of versatile filters has been accepted by <a href="https://ieeexplore.ieee.org/iel7/34/4359286/09543586.pdf">IEEE TPAMI</a>.</li></p>
-      <p><li> 07/2021, 1 paper has been accepted by <a href="https://iccv2021.thecvf.com/home">ICCV 2021</a>.</li></p>
-      <p><li> 05/2021, 1 paper has been accepted by <a href="https://icml.cc/">ICML 2021</a>.</li></p>
-      <p><li> 05/2021, I have been selected as a Senior Area Chair for <a href="http://valser.org/">VALSE 2021</a>.</li></p>
-      <p><li> 03/2021, I accepted the invitation to serve as an Area Chair for <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</li></p>
-      <p><li> 03/2021, 9 papers have been accepted by <a href="http://cvpr2021.theRcvf.com/">CVPR 2021</a>.</li></p>
-      <!--
-      <p><li> 01/2021, I will give a talk about AdderNet at <a href="https://haet2021.github.io/speakers.html">HAET ICLR 2021 workshop</a>.</li></p>
-      <p><li> 12/2020, two papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-21/">AAAI 2021</a>.</li></p>
-      <p><li> 11/2020, I accepted the invitation to serve as an Area Chair for <a href="https://icml.cc/Conferences/2021">ICML 2021</a>.</li></p>
-      <p><li> 09/2020, six papers have been accepted by <a href="https://nips.cc/Conferences/2020">NeurIPS 2020</a>.</li></p>
-      <p><li> 07/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
-      <p><li> 07/2020, one paper has been accepted by <a href="https://eccv2020.eu/accepted-papers/">ECCV 2020</a>.</li></p>
-      <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
-      <p><li> 07/2020, one paper has been accepted by <a href="http://2020.acmmm.org/accepted-paper-id-list.txt">ACM MM 2020</a>.</li></p>
-      <p><li> 02/2020, seven papers have been accepted by <a href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</li></p>
-      <p><li> 01/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
-      <p><li> 11/2019, three papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-20/wp-content/uploads/2020/01/AAAI-20-Accepted-Paper-List.pdf">AAAI 2020</a>.</li></p>
-      -->
 
-  </div>
-<!-- The Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h2>Recent Projects</h2>
-    <p class="w3-justify">
-        Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
-    </p>
+  </head>
 
-        <h4><li>Adder Neural Networks</li></h4>
-        <img style="width:96%;" src="images/AdderNet.jpg"> 
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
-        </p>
-        <p class="w3-justify">
-        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
-        </p> 
+  <body class="fixed-top-nav sticky-bottom-footer">
 
-        <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
-        <img style="width:96%;" src="images/GhostNet.png"> 
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://live.huawei.com/huaweiconnect/meeting/cn/5872.html">Huawei Connect (HC) 2020</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub">MindSpore Hub</a>
-        </p>
-        <p class="w3-justify">
-        The initial verison of GhostNet was accepted by CVPR 2020, which achieved SOTA performance on ImageNet: <span style="color:red">75.7%</span> top1 acc with only <span style="color:red">226M FLOPS</span>. In the current version, we release a series computer vision models (e.g. int8 quantization, detection, and larger networks) on <strong>MindsSpore 1.0</strong> and <strong>Mate 30 Pro (Kirin 990)</strong>.
-        </p> 
+    <!-- Header -->
 
-        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
-        <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
-        </p>
-        <p class="w3-justify">
-        This project aims to develop a video style transfer system on the <strong>Huawei Atlas 200 DK AI developer Kit</strong>. The latency of the original model for processing one image is about <span style="color:red">630ms</span>. After accelerating it using our method, the lantency now is about <span style="color:red">40ms</span>. 
-        </p>  
-
-  </div>
-  
-  <!-- The Talks Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="talks">
-    <h2>Talks</h2>
-      <p><li> 10/2021, Vision Transformer at <a href="http://valser.org/2021/#/tutorial">VALSE 2021, Hangzhou, China</a>.</li></p>
-	  <p><li> 05/2021, Adder Neural Network at <a href="https://haet2021.github.io/speakers.html">HAET ICLR 2021 workshop</a>. Thanks <a href="https://datawisdom.ca/">Vahid</a> for the invitation.</li></p>
-      <p><li> 06/2020, "<a href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf">AI on the Edge - Discussion on the Gap Between Industry and Academia</a>" at <a  href="http://valser.org/"><strong>VALSE</strong></a> Webinar.</li></p>
-      <p><li> 05/2020, "<a href="https://www.bilibili.com/video/av925692420/">Edge AI: Progress and Future Directions</a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a  href="https://www.bilibili.com/"><strong>bilibili</strong></a>.</li></p>
-  </div>
- <!-- The Publications Section -->
-  <div class="w3-container w3-padding-32"" id="publications">
-    <h2>Research</h2>
-      <p class="w3-left-align" style="line-height:200%">
-        I'm interested in devleoping <strong>efficient models</strong> for computer vision (e.g. classification, detection, and super-resolution) using pruning, quantization, distilaltion, NAS, etc.
-      </p>
-    <h4> Conference Papers:</h4>
-
-    <ol>
-
-      <p>
-      <li><strong>Spatial-Channel Token Distillation for Vision MLPs</strong>
-      <br>
-      Yanxi Li, Xinghao Chen, Minjing Dong, Yehui Tang, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>ICML</em> 2022 | <a style="color: #447ec9" href="https://proceedings.mlr.press/v162/li22c/li22c.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Federated Learning with Positive and Unlabeled Data</strong>
-      <br>
-      Xinyang Lin*, Hanting Chen*, Yixing Xu, Chao Xu, Xiaolin Gui, Yiping Deng, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICML</em> 2022 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.mlr.press/v162/lin22b/lin22b.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>CMT: Convolutional Neural Networks Meet Vision Transformers</strong>
-      <br>
-      Jianyuan Guo, Kai Han, Han Wu, Yehui Tang, Xinghao Chen, <strong>Yunhe Wang</strong>, Chang Xu 
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_CMT_Convolutional_Neural_Networks_Meet_Vision_Transformers_CVPR_2022_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/CMT">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Efficient-AI-Backbones">Pytorch code</a>
-      </p>
-
-      <p>
-      <li><strong>Patch Slimming for Efficient Vision Transformers</strong>
-      <br>
-      Yehui Tang, Kai Han, <strong>Yunhe Wang</strong>, Chang Xu, Jianyuan Guo, Chao Xu, Dacheng Tao
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Tang_Patch_Slimming_for_Efficient_Vision_Transformers_CVPR_2022_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>An Image Patch Is a Wave: Phase-Aware Vision MLP</strong>
-      <br>
-      Yehui Tang, Kai Han, Jianyuan Guo, Chang Xu, Yanxi Li, Chao Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Tang_An_Image_Patch_Is_a_Wave_Phase-Aware_Vision_MLP_CVPR_2022_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/wave_mlp">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch">Pytorch code</a>
-      </p>
-
-      <p>
-      <li><strong>Instance-Aware Dynamic Neural Network Quantization</strong>
-      <br>
-      Zhenhua Liu, <strong>Yunhe Wang</strong>, Kai Han, Siwei Ma, Wen Gao
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Liu_Instance-Aware_Dynamic_Neural_Network_Quantization_CVPR_2022_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Efficient-Computing">Pytorch code</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/DynamicQuant">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Source-Free Domain Adaptation via Distribution Estimation</strong>
-      <br>
-      Ning Ding, Yixing Xu, Yehui Tang, Chao Xu, <strong>Yunhe Wang</strong>, Dacheng Tao
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Ding_Source-Free_Domain_Adaptation_via_Distribution_Estimation_CVPR_2022_paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Multimodal Token Fusion for Vision Transformers</strong>
-      <br>
-      Yikai Wang, Xinghao Chen, Lele Cao, Wenbing Huang, Fuchun Sun, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Multimodal_Token_Fusion_for_Vision_Transformers_CVPR_2022_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/TokenFusion">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/noah-research">Pytorch code</a>
-      </p>
-
-      <p>
-      <li><strong>Brain-Inspired Multilayer Perceptron With Spiking Neurons</strong>
-      <br>
-      Wenshuo Li, Hanting Chen, Jianyuan Guo, Ziyang Zhang, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Brain-Inspired_Multilayer_Perceptron_With_Spiking_Neurons_CVPR_2022_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/snn_mlp">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Hire-MLP: Vision MLP via Hierarchical Rearrangement</strong>
-      <br>
-      Jianyuan Guo, Yehui Tang, Kai Han, Xinghao Chen, Han Wu, Chao Xu, Chang Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_Hire-MLP_Vision_MLP_via_Hierarchical_Rearrangement_CVPR_2022_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/ggjy/Hire-Wave-MLP.pytorch">code</a>
-      </p>
-
-      <p>
-      <li><strong>Transformer in Transformer</strong>
-      <br>
-      Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/854d9fca60b4bd07f9bb215d59ef5561-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/CV-Backbones">code</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/TNT">MindSpore code</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Frequency Domain Approximation for Binary Neural Networks</strong>
-      <br>
-      Yixing Xu, Kai Han, Chang Xu, Yehui Tang, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/d645920e395fedad7bbbed0eca3fe2e0-Paper.pdf">paper</a> | <span style="color:red"> Oral Presentation</span>
-      </p>
-
-      <p>
-      <li><strong>Dynamic Resolution Network</strong>
-      <br>
-      Mingjian Zhu*, Kai Han*, Enhua Wu, Qiulin Zhang, Ying Nie, Zhenzhong Lan, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2021 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/e56954b4f6347e897f954495eab16a88-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Post-Training Quantization for Vision Transformer</strong>
-      <br>
-      Zhenhua Liu, <strong>Yunhe Wang</strong>, Kai Han, Wei Zhang, Siwei Ma, Wen Gao
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/ec8956637a99787bd197eacd77acce5e-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Augmented Shortcuts for Vision Transformers</strong>
-      <br>
-      Yehui Tang, Kai Han, Chang Xu, An Xiao, Yiping Deng, Chao Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/818f4654ed39a1c147d1e51a00ffb4cb-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Adder Attention for Vision Transformer</strong>
-      <br>
-      Han Shu*, Jiahao Wang*, Hanting Chen, Lin Li, Yujiu Yang, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2021 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/a57e8915461b83adefb011530b711704-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Towards Stable and Robust Addernets</strong>
-      <br>
-      Minjing Dong, <strong>Yunhe Wang</strong>, Xinghao Chen, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/6e3197aae95c2ff8fcab35cb730f6a86-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Handling Long-Tailed Feature Distribution in Addernets</strong>
-      <br>
-      Minjing Dong, <strong>Yunhe Wang</strong>, Xinghao Chen, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/95323660ed2124450caaac2c46b5ed90-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Neural Architecture Dilation for Adversarial Robustness</strong>
-      <br>
-      Yanxi Li, Zhaohui Yang, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/f7664060cc52bc6f3d620bcedc94a4b6-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>An Empirical Study of Adder Neural Networks for Object Detection</strong>
-      <br>
-      Xinghao Chen, Chang Xu, Minjing Dong, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2021/file/37693cfc748049e45d87b8c7d8b9aacd-Paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Frequency-Aware Dynamic Network for Efficient Super-Resolution</strong>
-      <br>
-      Wenbin Xie, Dehua Song, Chang Xu, Chunjing Xu, Hui Zhang, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICCV</em> 2021 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content/ICCV2021/papers/Xie_Learning_Frequency-Aware_Dynamic_Network_for_Efficient_Super-Resolution_ICCV_2021_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Winograd Algorithm for AdderNet</strong>
-      <br>
-      Wenshuo Li, Hanting Chen, Mingqiang Huang, Xinghao Chen, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICML</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2105.05530.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Distilling Object Detectors via Decoupled Features</strong>
-      <br>
-      Jianyuan Guo, Kai Han, <strong>Yunhe Wang</strong>, Wei Zhang, Chunjing Xu, Chang Xu
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Distilling_Object_Detectors_via_Decoupled_Features_CVPR_2021_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>HourNAS: Extremely Fast Neural Architecture Search Through an Hourglass Lens</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Xinghao Chen, Jianyuan Guo, Wei Zhang, 
-      <br>
-      Chao Xu, Chunjing Xu, Dacheng Tao, Chang Xu  
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2005.14446.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/HourNAS-F_v1.0_cifar10">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Manifold Regularized Dynamic Network Pruning</strong>
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Yiping Deng, Chao Xu, Dacheng Tao, Chang Xu
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2103.05861.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/manidp_v1.0_cifar10">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Learning Student Networks in the Wild</strong>
-      <br>
-      Hanting Chen, Tianyu Guo, Chang Xu, Wenshuo Li, Chunjing Xu, Chao Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Learning_Student_Networks_in_the_Wild_CVPR_2021_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>AdderSR: Towards Energy Efficient Image Super-Resolution</strong>
-      <br>
-      Dehua Song*, <strong>Yunhe Wang</strong>*, Hanting Chen, Chang Xu, Chunjing Xu, Dacheng Tao
-      <br>
-      <em>CVPR</em> 2021 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.08891.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
-      </p>
-
-      <p>
-      <li><strong>ReNAS: Relativistic Evaluation of Neural Architecture Search</strong>
-      <br>
-      Yixing Xu, <strong>Yunhe Wang</strong>, Kai Han, Yehui Tang, Shangling Jui, Chunjing Xu, Chang Xu
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1910.01523.pdf">paper</a> | <span style="color:red"> Oral Presentation</span> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/renas_v1.0_cifar10">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Pre-Trained Image Processing Transformer</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Tianyu Guo, Chang Xu, Yiping Deng, Zhenhua Liu, 
-      <br>
-      Siwei Ma, Chunjing Xu, Chao Xu, Wen Gao
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2012.00364.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/IPT">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Pretrained-IPT">Pytorch code</a>
-      </p>
-
-      <p>
-      <li><strong>Data-Free Knowledge Distillation For Image Super-Resolution</strong>
-      <br>
-      Yiman Zhang, Hanting Chen, Xinghao Chen, Yiping Deng, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Data-Free_Knowledge_Distillation_for_Image_Super-Resolution_CVPR_2021_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Positive-Unlabeled Data Purification in the Wild for Object Detection</strong>
-      <br>
-      Jianyuan Guo, Kai Han, Han Wu, Xinghao Chen, Chao Zhang, Chunjing Xu, Chang Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Positive-Unlabeled_Data_Purification_in_the_Wild_for_Object_Detection_CVPR_2021_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>One-shot Graph Neural Architecture Search with Dynamic Search Space</strong>
-      <br>
-      Yanxi Li, Zean Wen, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>AAAI</em> 2021 <a style="color: #447ec9" href="https://www.aaai.org/AAAI21Papers/AAAI-3955.YangS.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Adversarial Robustness through Disentangled Representations</strong>
-      <br>
-      Shuo Yang, Tianyu Guo, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>AAAI</em> 2021 <a style="color: #447ec9" href="https://www.aaai.org/AAAI21Papers/AAAI-3955.YangS.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Kernel Based Progressive Distillation for Adder Neural Networks</strong>
-      <br>
-      Yixing Xu, Chang Xu, Xinghao Chen, Wei Zhang, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.13044.pdf">paper</a> | <span style="color:red"> Spotlight</span> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a>
-      </p>
-
-      <p>
-      <li><strong>Model Rubik's Cube: Twisting Resolution, Depth and Width for TinyNets</strong>
-      <br>
-      Kai Han*, <strong>Yunhe Wang</strong>*, Qiulin Zhang, Wei Zhang, Chunjing Xu, Tong Zhang
-      <br>
-      <em>NeurIPS</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2010.14819.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Residual Distillation: Towards Portable Deep Neural Networks without Shortcuts</strong>
-      <br>
-      Guilin Li*, Junlei Zhang*, <strong>Yunhe Wang</strong>, Chuanjian Liu, Matthias Tan, Yunfeng Lin,
-      <br>
-      Wei Zhang, Jiashi Feng, Tong Zhang
-      <br>
-      <em>NeurIPS</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2020/file/657b96f0592803e25a4f07166fff289a-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/leoozy/JointRD_Neurips2020">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Searching for Low-Bit Weights in Quantized Neural Networks</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Kai Han, Chunjing Xu, Chao Xu, Dacheng Tao, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/abs/2009.08695.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.0/VGG-Small-low-bit_cifar10">code</a> 
-      </p>
-
-      <p>
-      <li><strong>SCOP: Scientific Control for Reliable Neural Network Pruning</strong>
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Dacheng Tao, Chunjing Xu, Chao Xu, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2010.10732">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?2593/noah-cvlab/gpu/1.0/resnet-0.65x_v1.0_oxford_pets">code</a>
-      </p>
-
-      <p>
-      <li><strong>Adapting Neural Architectures Between Domains</strong>
-      <br>
-      Yanxi Li, Zhaohui Yang, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://papers.nips.cc/paper/2020/file/08f38e0434442128fab5ead6217ca759-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/liyxi/AdaptNAS">code</a>
-      </p>
-
-      <p>
-      <li><strong>Discernible Image Compression</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Chang Xu, Peng Du, Chao Xu, Chunjing Xu, Qi Tian
-      <br>
-      <em>ACM MM</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2002.06810">paper</a>
-      </p>
-                   
-      <p>
-      <li><strong>Optical Flow Distillation: Towards Efficient and Stable Video Style Transfer</strong>
-      <br>
-      Xinghao Chen*, Yiman Zhang*, <strong>Yunhe Wang</strong>, Han Shu, Chunjing Xu, Chang Xu
-      <br>
-      <em>ECCV</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2007.05146.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/AtlasCase/sample-styletransfer">code</a> 
-      </p>
-      
-      <p>
-      <li><strong>Learning Binary Neurons with Noisy Supervision</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Yixing Xu, Chunjing Xu, Enhua Wu, Chang Xu
-      <br>
-      <em>ICML</em> 2020 | <a style="color: #447ec9" href="https://proceedings.icml.cc/static/paper_files/icml/2020/181-Paper.pdf">paper</a>  
-      </p>
-
-      <p>
-      <li><strong>Neural Architecture Search in a Proxy Validation Loss Landscape</strong>
-      <br>
-      Yanxi Li, Minjing Dong, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>ICML</em> 2020 | <a style="color: #447ec9" href="https://proceedings.icml.cc/static/paper_files/icml/2020/439-Paper.pdf">paper</a>
-
-      <p>
-      <li><strong>On Positive-Unlabeled Classification in GAN</strong>
-      <br>
-      Tianyu Guo, Chang Xu, Jiajun Huang, <strong>Yunhe Wang</strong>, Boxin Shi, Chao Xu, Dacheng Tao
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_On_Positive-Unlabeled_Classification_in_GAN_CVPR_2020_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>CARS: Continuous Evolution for Efficient Neural Architecture Search</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Xinghao Chen, Boxin Shi, Chao Xu, Chunjing Xu, Qi Tian, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_CARS_Continuous_Evolution_for_Efficient_Neural_Architecture_Search_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/CARS">code</a> 
-      </p>
-
-      <p>
-      <li><strong>AdderNet: Do We Really Need Multiplications in Deep Learning?</strong>
-      <br>
-      Hanting Chen*, <strong>Yunhe Wang</strong>*, Chunjing Xu, Boxin Shi, Chao Xu, Qi Tian, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_AdderNet_Do_We_Really_Need_Multiplications_in_Deep_Learning_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
-      <br>
-      </p>
-
-      <p>
-      <li><strong>A Semi-Supervised Assessor of Neural Architectures</strong>
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Hanting Chen, Boxin Shi, Chao Xu, Chunjing Xu, Qi Tian, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Tang_A_Semi-Supervised_Assessor_of_Neural_Architectures_CVPR_2020_paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection</strong>
-      <br>
-      Jianyuan Guo, Kai Han, <strong>Yunhe Wang</strong>, Chao Zhang, Zhaohui Yang, Han Wu, Xinghao Chen, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Hit-Detector_Hierarchical_Trinity_Architecture_Search_for_Object_Detection_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/ggjy/HitDet.pytorch">code</a>
-      </p>
-
-      <p>
-      <li><strong>Frequency Domain Compact 3D Convolutional Neural Networks</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Han Shu, Yehui Tang, Chunjing Xu, Boxin Shi, Chao Xu, Qi Tian, Chang Xu 
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Frequency_Domain_Compact_3D_Convolutional_Neural_Networks_CVPR_2020_paper.pdf">paper</a>
-      </p>
-
-      <li><strong>GhostNet: More Features from Cheap Operations</strong>      
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/ghostnet">code</a> 
-      </p>
-      
-      <p>
-      <li><strong>Beyond Dropout: Feature Map Distortion to Regularize Deep Neural Networks</strong>  
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Boxin Shi, Chao Xu, Chunjing Xu, Chang Xu
-      <br>
-      <em>AAAI</em> 2020 | <a style="color: #447ec9" href="data/2020 AAAI dropblock.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/disout">code</a>
-      </p>
-
-      <p>
-      <li><strong>DropNAS: Grouped Operation Dropout for Differentiable Architecture Search</strong>
-      <br>
-      Weijun Hong, Guilin Li, Weinan Zhang, Ruiming Tang, <strong>Yunhe Wang</strong>, Zhenguo Li, Yong Yu
-      <br>
-      <em>IJCAI</em> 2020 | <a style="color: #447ec9" href="https://www.ijcai.org/Proceedings/2020/0322.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Distilling Portable Generative Adversarial Networks for Image Translation</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Han Shu, Changyuan Wen, Chunjing Xu, Boxin Shi, Chao Xu, Chang Xu
-      <br>
-      <em>AAAI</em> 2020 | <a style="color: #447ec9" href="data/2020 AAAI GAN Distillation.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Efficient Residual Dense Block Search for Image Super-Resolution</strong>
-      <br>
-      Dehua Song, Chang Xu, Xu Jia, Yiyi Chen, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>AAAI</em>, 2020 | <a style="color: #447ec9" href="data/2020 AAAI SR NAS.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/vega">code</a>
-      </p>
-
-      <p>
-      <li><strong>Positive-Unlabeled Compression on the Cloud</strong>
-      <br>
-      Yixing Xu, <strong>Yunhe Wang</strong>, Hanting Chen, Kai Han, Chunjing Xu, Dacheng Tao, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2019 | <a style="color: #447ec9" href="data/2019 NIPS PU Compression.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/pu_compress">code</a> | <a style="color: #447ec9" href="http://papers.nips.cc/paper/8525-positive-unlabeled-compression-on-the-cloud-supplemental.zip">supplement</a>
-      </p>
-
-      <p>
-      <li><strong>Data-Free Learning of Student Networks</strong>
-      <br>
-      Hanting Chen,<strong>Yunhe Wang</strong>, Chang Xu, Zhaohui Yang, Chuanjian Liu, Boxin Shi,
-      <br>
-      Chunjing Xu, Chao Xu, Qi Tian
-      <br>
-      <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV DAFL.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/DAFL">code</a>
-      </p>
-
-      <p>
-      <li><strong>Co-Evolutionary Compression for Unpaired Image Translation</strong>
-      <br>
-      Han Shu, <strong>Yunhe Wang</strong>, Xu Jia, Kai Han, Hanting Chen, Chunjing Xu, Qi Tian, Chang Xu 
-      <br>
-      <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV Co-Evolution Pruning.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/GAN-pruning">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Searching for Accurate Binary Neural Architectures</strong>
-      <br>
-      Mingzhu Shen, Kai Han, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICCV Neural Architectures Workshop</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCVw Bianry Search.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>LegoNet: Efficient Convolutional Neural Networks with Lego Filters</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Hanting Chen, Chuanjian Liu, Boxin Shi, Chao Xu, Chunjing Xu, Chang Xu
-      <br>
-      <em>ICML</em> 2019 | <a style="color: #447ec9" href="data/2019 ICML LegoNet.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/LegoNet">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Instance-wise Sparsity for Accelerating Deep Models</strong>
-      <br>
-      Chuanjian Liu, <strong>Yunhe Wang</strong>, Kai Han, Chunjing Xu, Chang Xu 
-      <br>
-      <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="data/2019 IJCAI Instance Sparsity.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Attribute Aware Pooling for Pedestrian Attribute Recognition</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Han Shu, Chuanjian Liu, Chunjing Xu, Chang Xu
-      <br>
-      <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="https://www.ijcai.org/proceedings/2019/0341.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Crafting Efficient Neural Graph of Large Entropy</strong>
-      <br>
-      Minjing Dong, Hanting Chen, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="data/2019 IJCAI Graph Pruning.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Low Resolution Visual Recognition via Deep Feature Distillation</strong>
-      <br>
-      Mingjian Zhu, Kai Han, Chao Zhang, Jinlong Lin, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICASSP</em> 2019 | <a style="color: #447ec9" href="data/2019 ICASSP LR Distillation.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Versatile Filters for Efficient Convolutional Neural Networks</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chunjing Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>NeurIPS</em> 2018 | <a style="color: #447ec9" href="data/2018 NIPS Versatile Filter.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Versatile-Filters">code</a> | <a style="color: #447ec9" href="https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks-supplemental.zip">supplement</a> 
-      </p>
-
-      <p>
-      <li><strong>Towards Evolutionary Compression</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Jiayan Qiu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>SIGKDD</em> 2018 | <a style="color: #447ec9" href="data/2018 KDD GA pruning.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Autoencoder Inspired Unsupervised Feature Selection</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Chao Zhang, Chao Li, Chao Xu 
-      <br>
-      <em>ICASSP</em> 2018 | <a style="color: #447ec9" href="data/2018 ICASSP Feature Selector.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/NoahLuffy/AEFS">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Adversarial Learning of Portable Student Networks</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>AAAI</em> 2018 | <a style="color: #447ec9" href="data/2018 AAAI Adversarial Distillation.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Beyond Filters: Compact Feature Map for Portable Deep Model</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>ICML</em> 2017 | <a style="color: #447ec9" href="data/2017 ICML Beyond Filters.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/YunheWang/RedCNN">code</a> | <a style="color: #447ec9" href="http://proceedings.mlr.press/v70/wang17m/wang17m-supp.zip">supplement</a>
-      </p>
-
-      <p>
-      <li><strong>Beyond RPCA: Flattening Complex Noise in the Frequency Domain</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>AAAI</em> 2017 | <a style="color: #447ec9" href="data/2017 AAAI Beyond RPCA.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Privileged Multi-Label Learning</strong>
-      <br>
-      Shan You, Chang Xu, <strong>Yunhe Wang</strong>, Chao Xu, Dacheng Tao 
-      <br>
-      <em>IJCAI</em> 2017 | <a style="color: #447ec9" href="data/2017 IJCAI Privileged.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>CNNpack: Packing Convolutional Neural Networks in the Frequency Domain</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Shan You, Chao Xu, Dacheng Tao
-      <br>
-      <em>NeurIPS</em> 2016 | <a style="color: #447ec9" href="data/2016 NIPS CNNpack.pdf">paper</a> | <a style="color: #447ec9" href="https://papers.nips.cc/paper/6390-cnnpack-packing-convolutional-neural-networks-in-the-frequency-domain-supplemental.zip">supplement</a> 
-      </p>
-
-      </ol>
-
-      <h4> Journal Papers:</h4>
-
-      <ol>
-
-      <p>
-      <li><strong>GhostNets on Heterogeneous Devices via Cheap Operations</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Chang Xu, Jianyuan Guo, Chunjing Xu, Enhua Wu, Qi Tian 
-      <br>
-      <em>IJCV</em> 2022 | <a style="color: #447ec9" href="https://link.springer.com/content/pdf/10.1007/s11263-022-01575-y.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/ghostnet_d">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Efficient-AI-Backbones">Pytorch code</a>
-      </p>
-
-      <p>
-      <li><strong>A Survey on Visual Transformer</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Hanting Chen, Xinghao Chen, Jianyuan Guo, Zhenhua Liu, Yehui Tang, An Xiao, Chunjing Xu, Yixing Xu, Zhaohui Yang, Yiman Zhang, Dacheng Tao
-      <br>
-      <em>IEEE TPAMI</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2012.12556">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Versatile Convolution Filters for Efficient Visual Recognition</strong>
-      <br>
-      Kai Han*, <strong>Yunhe Wang</strong>*, Chang Xu, Chunjing Xu, Enhua Wu, Dacheng Tao
-      <br>
-      <em>IEEE TPAMI</em> 2021 (* equal contribution) | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/iel7/34/4359286/09543586.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Versatile-Filters">code</a>
-      </p>
-      	
-      <p>
-      <li><strong>Adversarial Recurrent Time Series Imputation</strong>
-      <br>
-      Shuo Yang, Minjing Dong, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>IEEE TNNLS</em> 2020 |<a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158560">paper</a>
-      </p>
-  
-      <p>
-      <li><strong>Learning Student Networks via Feature Embedding</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao
-      <br>
-      <em>IEEE TNNLS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1812.06597">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Packing Convolutional Neural Networks in the Frequency Domain</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao
-      <br>
-      <em>IEEE TPAMI</em> 2018 | <a style="color: #447ec9" href="data/2018 PAMI CNNpack.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>DCT Regularized Extreme Visual Recovery</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Shan You, Chao Xu, Dacheng Tao
-      <br>
-      <em>IEEE TIP</em> 2017 | <a style="color: #447ec9" href="data/2017 TIP DCT norm.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>DCT Inspired Feature Transform for Image Retrieval and Reconstruction</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Miaojing Shi, Shan You, Chao Xu
-      <br>
-      <em>IEEE TIP</em> 2016 | <a style="color: #447ec9" href="data/2016 TIP DCT feature.pdf">paper</a>
-      </p>
-
-      </ol>
-
-    </p>
-  </div>
-
-<!-- The Services Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="service">
-    <h2>Services</h2>
-      <p><li> Area Chair of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p>
-      <p><li> Senior Program Committee Members of <a href="https://ijcai-21.org/">IJCAI 2021</a>, <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
-      <p><li> Journal Reviewers of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a>, <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
-      <p><li> Program Committee Members of ICCV 2021, AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
-  </div>
-
-  <!-- The Awards Section -->
-  <div class="w3-container w3-padding-32" id="award">
-    <h2>Awards</h2>
-    <p><li> 2020, <a href="https://mp.weixin.qq.com/s/dORL01lgFNDHgjp3KMJmiQ">Nomination for Outstanding Youth Paper Award</a>, <a href="https://worldaic.com.cn/portal/en/aboutus.html">WAIC</a></p>               
-    <p><li> 2017, <a href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a></p>
-    <p><li> 2017, <a href="http://scholarship.baidu.com/">Baidu Scholarship</a></p>
-    <p><li> 2017, President's PhD Scholarship, Peking University</p>
-    <p><li> 2017, National Scholarship for Graduate Students</p>
-    <p><li> 2016, National Scholarship for Graduate Students</p>
-  </div>  
-
-  <div class="w3-light-grey w3-center w3-padding-24">
-
-    Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>, just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a></br>
-
-  <!-- Default Statcounter code for Yunhe Wang's Homepage
-  https://www.wangyunhe.site -->
-  No.
-  <script type="text/javascript">
-  var sc_project=12347113; 
-  var sc_invisible=0; 
-  var sc_security="21aca5d1"; 
-  var sc_https=1; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script> Visitor Since Feb 2022. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
-  <noscript>
-    <div class="statcounter"><a title="Web Analytics Made Easy -
-  StatCounter" href="https://statcounter.com/" target="_blank"><img
-  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
-  alt="Web Analytics Made Easy - StatCounter"></a></div>
-  </noscript>
-  <!-- End of Statcounter Code -->
-
-  </div>
-
-  <!-- End page content -->
-</div>
-
-<script>
-// Accordion 
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+    <header>
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?29274d0e68415cd4179a801ea4abf7cb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
-</body>
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Jindong</span>   Wang
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/others/">
+                Others
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                Projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                Publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/service/">
+                Service
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/tlbook/">
+                迁移学习导论
+                
+              </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    
+    <div class="profile float-right">
+      
+      <img class="img-fluid z-depth-1 rounded-circle" src="/assets/img/me2.png">
+      
+      
+    </div>
+    
+    <h1 class="post-title" style="font-size:28px">
+     <span class="font-weight-bold">Jindong</span>  Wang
+    </h1>
+     <p class="desc"></p>
+  
+
+  <article>
+    
+  </article></header>
+
+    <div class="clearfix">
+      <p>Researcher, Microsoft Research Asia<br>
+Building 2, No. 5 Danling Street, Haidian District, Beijing, China<br>
+jindongwang [at] outlook.com, jindong.wang [at] microsoft.com<br>
+<a href="https://scholar.google.com/citations?user=hBZ_tKsAAAAJ" target="_blank" rel="noopener noreferrer">Google scholar</a> | <a href="https://github.com/jindongwang" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://dblp.org/pid/19/2969-1.html" target="_blank" rel="noopener noreferrer">DBLP</a> || <a href="https://www.zhihu.com/people/jindongwang" target="_blank" rel="noopener noreferrer">Zhihu</a> | <a href="http://www.weibo.com/wjdbr" target="_blank" rel="noopener noreferrer">Weibo</a> | <a href="http://jd92.wang/assets/image/wechat_public_account.jpg" target="_blank" rel="noopener noreferrer">Wechat</a> | <a href="https://space.bilibili.com/477087194" target="_blank" rel="noopener noreferrer">Bilibili</a> || <a href="http://jd92.wang/assets/files/../../../../../assets/files/cv_jindongwang_cn-eng.pdf" target="_blank" rel="noopener noreferrer">Resume</a></p>
+
+<p>I’m currently a researcher at <a href="http://www.msra.cn/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia (MSRA)</a>. Before joining MSRA, I obtained my Ph.D. from Institute of Computing Technology, Chinese Academy of Sciences in June, 2019. My doctoral thesis was awarded the excellent Ph.D. thesis of Chinese Academy of Sciences. In 2018/04–2018/08, I was a visitor of Prof. <a href="https://cse.hkust.edu.hk/~qyang/" target="_blank" rel="noopener noreferrer">Qiang Yang</a>’s group at Hong Kong University of Science and Technology (HKUST). My work on transfer learning has won the best paper awards in ICCSE 2018 and FTL-IJCAI 2019. In 2021, I published the textbook <a href="http://jd92.wang/tlbook" target="_blank" rel="noopener noreferrer">迁移学习导论</a>, a hands-on introduction to transfer learning. In 2022, I was selected into the list of <a href="https://www.aminer.cn/ai2000?domain_ids=5dc122672ebaa6faa962c2a4" target="_blank" rel="noopener noreferrer">2022 AI 2000 Most Influential Scholars</a> by AMiner in recognition of my contributions in the field of multimedia between 2012-2021 (ranked 49/2000).</p>
+
+<p>Research interest: transfer learning, out-of-distribution / domain generalization, semi-supervised learning, federated learning, and related applications such as activity recognition and computer vision. <em>Interested in internship or collaboration? Contact me.</em></p>
+
+<!-- ### Highlights
+
+1. Four of my papers are highly cited and ranked top 20 globally in recent 5 years in Google scholar metrics! See [here](https://zhuanlan.zhihu.com/p/421192644).
+2. I wrote a popular book [迁移学习导论](http://jd92.wang/tlbook) to make it easy to learn, understand, and use transfer learning.
+3. I lead the most popular transfer learning and semi-supervised learning projects on Github: [Transfer learning repo](https://github/jindongwang/transferlearning) [![Transfer learning repo](/assets/img/transferlearning-repo-star.jpg)](https://github/jindongwang/transferlearning) and  [Semi-supervised learning repo](https://github/torchssl/torchssl) [![SSL repo](/assets/img/torchssl-star.jpg)](https://github/stars/torchssl/torchssl)
+
+#### Preprints
+
+1. Yiqiang Chen, Wang Lu, <u>Jindong Wang</u>, Xin Qin, and Tao Qin. Federated Learning with Adaptive Batchnorm for Personalized Healthcare. arXiv preprint arXiv:2112.00734. [[arXiv](https://arxiv.org/abs/2112.00734)]
+2. Wenxin Hou, Han Zhu, Yidong Wang, <u>Jindong Wang</u><sup>#</sup>, Tao Qin, Renjun Xu, and Takahiro Shinozaki. Exploiting Adapters for Cross-lingual Low-resource Speech Recognition. arXiv preprint arXiv:2105.11905. [[arXiv](https://arxiv.org/abs/2105.11905)] [[code](https://github.com/jindongwang/transferlearning/tree/master/code/ASR)]
+3. <u>Jindong Wang</u>, Wenjie Feng, Chang Liu, Chaohui Yu, Mingxuan Du, Renjun Xu, Tao Qin, and Tie-Yan Liu. Learning Invariant Representations across Domains and Tasks. arXiv preprint arXiv:2103.05114. [[arXiv](https://arxiv.org/abs/2103.05114)]
+4. Chaohui Yu, <u>Jindong Wang</u><sup>#</sup>, Chang Liu, Tao Qin, Renjun Xu, Wenjie Feng, Yiqiang Chen, and Tie-Yan Liu. Learning to match distributions for domain adaptation. arXiv preprint arXiv:2007.10791. [[arXiv](http://arxiv.org/abs/https://arxiv.org/abs/2007.10791)] -->
+
+    </div>
+
+    
+      <div class="news">
+  <h4>News</h4>
+  
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+      
+      
+        <tr>
+          <th scope="row">Jul 20, 2022</th>
+          <td>
+            
+              Our paper <em>Domain generalization for activity recognition via adaptive feature fusion</em> has been accepted by ACM TIST!
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jul 17, 2022</th>
+          <td>
+            
+              Our paper <em>Domain-invariant Feature Exploration for Domain Generalization</em> has been accepted by TMLR! [<a href="https://openreview.net/forum?id=0xENE7HiYm" target="_blank" rel="noopener noreferrer">Openreview</a>]
+
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jun 15, 2022</th>
+          <td>
+            
+              Two papers on pre-training and federated learning have been accepted by Interspeech 2022!
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">May 22, 2022</th>
+          <td>
+            
+              Our domain generalization survey paper was accepted in IEEE TKDE! [<a href="https://arxiv.org/abs/2103.03097" target="_blank" rel="noopener noreferrer">Paper</a>]
+
+            
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+</div>
+
+    
+
+    <h4 id="highlights">Highlights</h4>
+
+<ol>
+  <li>Four of my papers are highly cited and ranked top 20 globally in recent 5 years in Google scholar metrics! See <a href="https://zhuanlan.zhihu.com/p/421192644" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li>I wrote a popular book <a href="http://jd92.wang/tlbook" target="_blank" rel="noopener noreferrer">迁移学习导论</a> to
+    make it easy to learn, understand, and use transfer learning.</li>
+  <li>I lead the most popular transfer learning and semi-supervised learning projects on Github: <a href="https://github/jindongwang/transferlearning" target="_blank" rel="noopener noreferrer">Transfer learning
+      repo</a> <a href="https://github/jindongwang/transferlearning" target="_blank" rel="noopener noreferrer"><img src="/assets/img/transferlearning-repo-star.jpg" alt="Transfer learning repo"></a> and <a href="https://github/torchssl/torchssl" target="_blank" rel="noopener noreferrer">Semi-supervised learning
+      repo</a> <a href="https://github/stars/torchssl/torchssl" target="_blank" rel="noopener noreferrer"><img src="/assets/img/torchssl-star.jpg" alt="SSL repo"></a>
+  </li>
+  <li>
+    I was selected into the list of <a href="https://www.aminer.cn/ai2000?domain_ids=5dc122672ebaa6faa962c2a4" target="_blank" rel="noopener noreferrer">2022 AI 2000 Most Influential Scholars</a> by AMiner in recognition of my contributions in the field of multimedia between 2012-2021 (ranked 49/2000)
+  </li>
+</ol>
+
+<!-- <h4 id="preprints">Preprints</h4>
+
+<ol>
+
+  <li>Yidong Wang, Hao Chen, Qiang Heng, Wenxin Hou, Marios Savvides, Takahiro Shinozaki, Bhiksha Raj, Zhen WuBowen Zhang, Wenxin Hou, Zhen Wu, <u>Jindong Wang</u><sup>#</sup>. FreeMatch: Self-adaptive Thresholding for Semi-supervised Learning. arXiv preprint arXiv:2205.07246. [<a href="https://arxiv.org/abs/2205.07246"
+    target="_blank" rel="noopener noreferrer">arXiv</a>]</li>
+
+  <li>Yidong Wang, Bowen Zhang, Wenxin Hou, Zhen Wu, <u>Jindong Wang</u><sup>#</sup>, Takahiro Shinozaki. Margin Calibration for Long-Tailed Visual Recognition. arXiv preprint arXiv:2112.07225. [<a href="https://arxiv.org/abs/2112.07225"
+      target="_blank" rel="noopener noreferrer">arXiv</a>]</li>
+
+  <li>
+    <u>Jindong Wang</u>, Wenjie Feng, Chang Liu, Chaohui Yu, Mingxuan Du, Renjun Xu, Tao Qin, and Tie-Yan Liu. Learning
+    Invariant Representations across Domains and Tasks. arXiv preprint arXiv:2103.05114. [<a
+      href="https://arxiv.org/abs/2103.05114" target="_blank" rel="noopener noreferrer">arXiv</a>]
+  </li>
+  <li>Chaohui Yu, <u>Jindong Wang</u><sup>#</sup>, Chang Liu, Tao Qin, Renjun Xu, Wenjie Feng, Yiqiang Chen, and Tie-Yan
+    Liu. Learning to match distributions for domain adaptation. arXiv preprint arXiv:2007.10791. [<a
+      href="http://arxiv.org/abs/https://arxiv.org/abs/2007.10791" target="_blank" rel="noopener noreferrer">arXiv</a>]
+  </li>
+</ol> -->
+
+    
+      <div class="publications">
+  <h4>Selected publications</h4>
+  <ol class="bibliography">
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">TKDE</abbr>
+    
+  
+  </div>
+
+  <div id="wang2022generalizing" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Generalizing to Unseen Domains: A Survey on Domain Generalization</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Cuiling Lan,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Chang Liu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yidong Ouyang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Tao Qin,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wang Lu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yiqiang Chen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wenjun Zeng,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Philip S. Yu
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>IEEE Transactions on Knowledge and Data Engineering (TKDE)</em>
+      
+      
+      
+        2022
+      
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+      [<a href="https://arxiv.org/abs/2103.03097" role="button" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">arXiv</a>]
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="/assets/files/DG_survey_TKDE22.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+    
+    
+      [<a href="https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Code</a>]
+    
+    
+    
+      
+      [<a href="/assets/files/DGtutorial_ijcai22.pdf" style="padding-top: 0em; padding-bottom: 0px;">Slides</a>]
+      
+    
+    
+      [<a href="https://dgresearch.github.io/" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Website</a>]
+    
+    
+
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2022generalizing</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Generalizing to Unseen Domains: A Survey on Domain Generalization}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Jindong and Lan, Cuiling and Liu, Chang and Ouyang, Yidong and Qin, Tao and Lu, Wang and Chen, Yiqiang and Zeng, Wenjun and Yu, Philip S.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Knowledge and Data Engineering (TKDE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{TKDE}</span><span class="p">,</span>
+  <span class="na">arxiv</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2103.03097}</span><span class="p">,</span>
+  <span class="na">code</span> <span class="p">=</span> <span class="s">{https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG}</span><span class="p">,</span>
+  <span class="na">slides</span> <span class="p">=</span> <span class="s">{DGtutorial_ijcai22.pdf}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{DG_survey_TKDE22.pdf}</span><span class="p">,</span>
+  <span class="na">website</span> <span class="p">=</span> <span class="s">{https://dgresearch.github.io/}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">IMWUT</abbr>
+    
+  
+  </div>
+
+  <div id="lu2022semantic" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Semantic-Discriminative Mixup for Generalizable Sensor-based Cross-domain Activity Recognition</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wang Lu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em><sup>#</sup>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yiqiang Chen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Sinno Pan,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Chunyu Hu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Xin Qin
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>Proceedings of the ACM on Interactive, Mobile, Wearable, and Ubiquitous Technologies (IMWUT)</em>
+      
+      
+      
+        2022
+      
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+      [<a href="http://arxiv.org/abs/2206.06629" role="button" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">arXiv</a>]
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="/assets/files/imwut22-sdmix.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">lu2022semantic</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Semantic-Discriminative Mixup for Generalizable Sensor-based Cross-domain Activity Recognition}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Lu, Wang and Wang, Jindong and Chen, Yiqiang and Pan, Sinno and Hu, Chunyu and Qin, Xin}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Proceedings of the ACM on Interactive, Mobile, Wearable, and Ubiquitous Technologies (IMWUT)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{IMWUT}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">corr</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">arxiv</span> <span class="p">=</span> <span class="s">{http://arxiv.org/abs/2206.06629}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{imwut22-sdmix.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">TKDE</abbr>
+    
+  
+  </div>
+
+  <div id="zhang2022adaptive" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Adaptive Memory Networks with Self-supervised Learning for Unsupervised Anomaly Detection</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yuxin Zhang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em><sup>#</sup>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yiqiang Chen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Han Yu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Tao Qin
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>IEEE Transactions on Knowledge and Data Engineering (TKDE)</em>
+      
+      
+      
+        2022
+      
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+      [<a href="https://arxiv.org/abs/2201.00464" role="button" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">arXiv</a>]
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="/assets/files/tkde22_amsl.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">zhang2022adaptive</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Adaptive Memory Networks with Self-supervised Learning for Unsupervised Anomaly Detection}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Yuxin and Wang, Jindong and Chen, Yiqiang and Yu, Han and Qin, Tao}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Knowledge and Data Engineering (TKDE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{TKDE}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">corr</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">arxiv</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2201.00464}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{tkde22_amsl.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">ICSE</abbr>
+    
+  
+  </div>
+
+  <div id="zhang2022remos" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">ReMoS: Reducing Defect Inheritance in Transfer Learning via Relevant Model Slicing</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Ziqi Zhang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yuanchun Li,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Bingyan Liu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Ding Li,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Xiangqun Chen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yao Guo,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Yunxin Liu
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>44th International Conference on Software Engineering (ICSE)</em>
+      
+      
+      
+        2022
+      
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="/assets/files/icse22-remos.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+    
+    
+      [<a href="https://github.com/jindongwang/transferlearning/tree/master/code/deep/ReMoS" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Code</a>]
+    
+    
+    
+    
+    
+      [<a href="https://www.bilibili.com/video/BV1mi4y1C7bP" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Video</a>]
+    
+
+    
+      [<a href="https://zhuanlan.zhihu.com/p/446453487" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Zhihu</a>]
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zhang2022remos</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ReMoS: Reducing Defect Inheritance in Transfer Learning via Relevant Model Slicing}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Ziqi and Li, Yuanchun and Wang, Jindong and Liu, Bingyan and Li, Ding and Chen, Xiangqun and Guo, Yao and Liu, Yunxin}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{44th International Conference on Software Engineering (ICSE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{ICSE}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{icse22-remos.pdf}</span><span class="p">,</span>
+  <span class="na">code</span> <span class="p">=</span> <span class="s">{https://github.com/jindongwang/transferlearning/tree/master/code/deep/ReMoS}</span><span class="p">,</span>
+  <span class="na">zhihu</span> <span class="p">=</span> <span class="s">{https://zhuanlan.zhihu.com/p/446453487}</span><span class="p">,</span>
+  <span class="na">video</span> <span class="p">=</span> <span class="s">{https://www.bilibili.com/video/BV1mi4y1C7bP}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="zhang2021flexmatch" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Flexmatch: Boosting semi-supervised learning with curriculum pseudo labeling</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Bowen Zhang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yidong Wang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wenxin Hou,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Hao Wu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em><sup>#</sup>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Manabu Okumura,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Takahiro Shinozaki
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>Advances in Neural Information Processing Systems (NeurIPS)</em>
+      
+      
+      
+        2021
+      
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+      [<a href="https://arxiv.org/abs/2110.08263" role="button" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">arXiv</a>]
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="http://jd92.wang/assets/files/flexmatch_nips21.pdf" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">PDF</a>]
+      
+    
+    
+    
+    
+      [<a href="https://github.com/TorchSSL/TorchSSL" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Code</a>]
+    
+    
+    
+      
+      [<a href="https://www.jianguoyun.com/p/DXeFVg8QjKnsBRibj54E" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Slides</a>]
+      
+    
+    
+    
+      [<a href="https://www.youtube.com/watch?v=aYuUwyZl_WY" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Video</a>]
+    
+
+    
+      [<a href="https://zhuanlan.zhihu.com/p/422930830" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Zhihu</a>]
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">zhang2021flexmatch</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Flexmatch: Boosting semi-supervised learning with curriculum pseudo labeling}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Bowen and Wang, Yidong and Hou, Wenxin and Wu, Hao and Wang, Jindong and Okumura, Manabu and Shinozaki, Takahiro}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{34}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">corr</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{NeurIPS}</span><span class="p">,</span>
+  <span class="na">arxiv</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2110.08263}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{http://jd92.wang/assets/files/flexmatch_nips21.pdf}</span><span class="p">,</span>
+  <span class="na">code</span> <span class="p">=</span> <span class="s">{https://github.com/TorchSSL/TorchSSL}</span><span class="p">,</span>
+  <span class="na">zhihu</span> <span class="p">=</span> <span class="s">{https://zhuanlan.zhihu.com/p/422930830}</span><span class="p">,</span>
+  <span class="na">video</span> <span class="p">=</span> <span class="s">{https://www.youtube.com/watch?v=aYuUwyZl_WY}</span><span class="p">,</span>
+  <span class="na">slides</span> <span class="p">=</span> <span class="s">{https://www.jianguoyun.com/p/DXeFVg8QjKnsBRibj54E}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">CIKM</abbr>
+    
+  
+  </div>
+
+  <div id="du2021adarnn" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Adarnn: Adaptive learning and forecasting of time series</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yuntao Du,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em><sup>#</sup>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wenjie Feng,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Sinno Pan,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Tao Qin,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Renjun Xu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Chongjun Wang
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>The 30th ACM International Conference on Information &amp; Knowledge Management (CIKM)</em>
+      
+      
+      
+        2021
+      
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+      [<a href="https://arxiv.org/abs/2108.04443" role="button" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">arXiv</a>]
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="/assets/files/cikm21-adarnn.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+    
+    
+      [<a href="https://github.com/jindongwang/transferlearning/tree/master/code/deep/adarnn" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Code</a>]
+    
+    
+    
+    
+    
+
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">du2021adarnn</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Adarnn: Adaptive learning and forecasting of time series}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Du, Yuntao and Wang, Jindong and Feng, Wenjie and Pan, Sinno and Qin, Tao and Xu, Renjun and Wang, Chongjun}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{The 30th ACM International Conference on Information \&amp; Knowledge Management (CIKM)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{402--411}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{CIKM}</span><span class="p">,</span>
+  <span class="na">corr</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">arxiv</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2108.04443}</span><span class="p">,</span>
+  <span class="na">code</span> <span class="p">=</span> <span class="s">{https://github.com/jindongwang/transferlearning/tree/master/code/deep/adarnn}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{cikm21-adarnn.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">ACMMM</abbr>
+    
+  
+  </div>
+
+  <div id="wang2018visual" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Visual domain adaptation with manifold embedded distribution alignment</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wenjie Feng,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yiqiang Chen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Han Yu,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Meiyu Huang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Philip S Yu
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>The 26th ACM international conference on Multimedia</em>
+      
+      
+      
+        2018
+      
+      
+        <strong>(300+ citations; 2nd most cited paper in MM’18)</strong>
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+    
+      
+      [<a href="/assets/files/a11_mm18.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+      
+      [<a href="https://www.jianguoyun.com/p/DRuWOFkQjKnsBRjkr2E" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Supp</a>]
+      
+    
+    
+    
+      [<a href="https://github.com/jindongwang/transferlearning/tree/master/code/traditional/MEDA" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Code</a>]
+    
+    
+      
+      [<a href="/assets/files/poster_mm18.pdf" style="padding-top: 0em; padding-bottom: 0px;">Poster</a>]
+      
+    
+    
+    
+    
+
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2018visual</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Visual domain adaptation with manifold embedded distribution alignment}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Jindong and Feng, Wenjie and Chen, Yiqiang and Yu, Han and Huang, Meiyu and Yu, Philip S}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{The 26th ACM international conference on Multimedia}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{402--410}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2018}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{ACMMM}</span><span class="p">,</span>
+  <span class="na">code</span> <span class="p">=</span> <span class="s">{https://github.com/jindongwang/transferlearning/tree/master/code/traditional/MEDA}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{a11_mm18.pdf}</span><span class="p">,</span>
+  <span class="na">supp</span> <span class="p">=</span> <span class="s">{https://www.jianguoyun.com/p/DRuWOFkQjKnsBRjkr2E}</span><span class="p">,</span>
+  <span class="na">poster</span> <span class="p">=</span> <span class="s">{poster_mm18.pdf}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">special</span> <span class="p">=</span> <span class="s">{300+ citations; 2nd most cited paper in MM'18}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-1 abbr">
+  
+    
+    <abbr class="badge">ICDM</abbr>
+    
+  
+  </div>
+
+  <div id="wang2017balanced" class="col-sm-8" style="max-width: 80%;">
+    
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">Balanced distribution adaptation for transfer learning</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  <em><b>Jindong Wang</b></em>
+                ,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yiqiang Chen,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Shuji Hao,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wenjie Feng,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Zhiqi Shen
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      
+        <em>2017 IEEE international conference on data mining (ICDM)</em>
+      
+      
+      
+        2017
+      
+      
+        <strong>(300+ citations; most cited paper in ICDM’17)</strong>
+      
+      </div>
+    
+
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <!--  -->
+    
+    <!-- 
+    <a class="bibtex btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Bib</a>
+     -->
+    
+      [<a href="http://ieeexplore.ieee.org/document/8215613/?part=1" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">HTML</a>]
+    
+    
+      
+      [<a href="/assets/files/a08_icdm17.pdf" style="padding-top: 0em; padding-bottom: 0px;">PDF</a>]
+      
+    
+    
+    
+    
+      [<a href="https://github.com/jindongwang/transferlearning/tree/master/code/BDA" style="padding-top: 0em; padding-bottom: 0px;" target="_blank" rel="noopener noreferrer">Code</a>]
+    
+    
+    
+    
+    
+
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2017balanced</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Balanced distribution adaptation for transfer learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Jindong and Chen, Yiqiang and Hao, Shuji and Feng, Wenjie and Shen, Zhiqi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2017 IEEE international conference on data mining (ICDM)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1129--1134}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2017}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{ICDM}</span><span class="p">,</span>
+  <span class="na">code</span> <span class="p">=</span> <span class="s">{https://github.com/jindongwang/transferlearning/tree/master/code/BDA}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{a08_icdm17.pdf}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{http://ieeexplore.ieee.org/document/8215613/?part=1}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">special</span> <span class="p">=</span> <span class="s">{300+ citations; most cited paper in ICDM'17}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+    
+
+  
+   
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    © Copyright 2022 Jindong  Wang.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+
+    
+    
+    Last updated: August 01, 2022.
+    
+  </div>
+  <!-- <a href="https://www.easycounter.com/">
+    <img src="https://www.easycounter.com/counter.php?jindongwang" border="0" alt="Hit Counter"></a> <I>unique
+    visitors since 2016</I>
+<br>
+<script type="text/javascript">
+    var sc_project = 11393308;
+    var sc_invisible = 0;
+    var sc_security = "33768b56";
+    var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    document.write("<sc" + "ript type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript>
+    <div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img
+                class="statcounter" src="//c.statcounter.com/11393308/0/33768b56/0/" alt="web
+analytics"></a></div>
+</noscript> -->
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  
+
+
+
+
+<a href="https://www.easycounter.com/">
+  <img src="https://www.easycounter.com/counter.php?jindongwang" border="0" alt="Hit Counter"></a>
+<br>
+
+<script type="text/javascript">
+  var sc_project = 11393308;
+  var sc_invisible = 0;
+  var sc_security = "33768b56";
+  var scJsHost = (("https:" == document.location.protocol) ?
+      "https://secure." : "http://www.");
+  document.write("<sc" + "ript type='text/javascript' src='" +
+      scJsHost +
+      "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript>
+  <div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img
+              class="statcounter" src="//c.statcounter.com/11393308/0/33768b56/0/" alt="web
+analytics"></a></div>
+</noscript>
+
+
 </html>
