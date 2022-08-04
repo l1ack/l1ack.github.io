@@ -17,11 +17,11 @@ blockquote
 }
 
 #links, #footer
-{ background: #83B82E url(linkfoot.png);
+{ background: #03084b ;
   color: #FFFFFF;
   border-color: #656F57;
 }
-
+/* url(linkfoot.png) */
 #links a, #footer a, #links a:hover, #footer a:hover
 { background: transparent;
   color: #FFFFFF;
@@ -32,17 +32,17 @@ blockquote
   background-size: 100% 100%;
   color: #656F57;
   border-top-color: #656F57;
-  border-bottom-color: #8AAF55;
+  border-bottom-color: #d4c113;
 }
 
 #logo h2
 { background: transparent;
-  color: #EEE;
+  color: rgb(242, 238, 184);
 }
 
 h1
 { background: transparent;
-  color: #83B82E;
+  color: #d4c113;
   border-color: #E1E1E1;
 }
 
@@ -52,24 +52,24 @@ h1
 }
 
 #menu li a
-{ background: #B8D58F;
-  color: #656F57;
+{ background: #03084baa;
+  color: #FFFFFF;
 }
 
 #menu li a:hover, #menu li a#selected, #menu li a#selected:hover
-{ background: #8AAF55;
+{ background: #03084b;
   color: #FFFFFF;
 } 
 
 #content, #column2, #column2 a
 { background: #FFFFFF;
-  color: #656F57;
+  color: #222233;
   border-color: #656F57;
 }
 
 #column2 a:hover
 { background: #FFFFFF;
-  color: #83B82E;
+  color: #2c91ee;
   border-color: #83B82E;
 }
 

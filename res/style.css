@@ -110,7 +110,7 @@ ol li
 /* logo */
 #logo
 { width: 1006px;
-  height: 125px;
+  height: 225px;
   border-top: 2px solid;
   border-bottom: 5px solid;
 }
@@ -164,7 +164,7 @@ ol li
 
 /* column 1 - contains sidebar items */
 #column1
-{ width: 225px;
+{ width: 125px;
   margin: 22px 0px 0px 0px;
   float: right;
   padding: 19px 19px 15px 19px;
@@ -172,7 +172,7 @@ ol li
 
 .sidebaritem
 { text-align: left;
-  width: 200px;
+  width: 50px;
   float: left;
   margin: 0px 0px 23px 0px;
   border: 1px solid;
@@ -181,7 +181,7 @@ ol li
 
 .sidebaritem2
 { text-align: center;
-  width: 200px;
+  width: 50px;
   float: left;
   margin: 8px 0px 0px 0px;
   border: 1px solid;
@@ -243,7 +243,7 @@ ol li
 /* column 2 - page content */
 #column2
 { text-align: justify;
-  width: 708px;
+  width: 858px;
   float: left;
   padding: 2px 3px 15px 19px;
 }
