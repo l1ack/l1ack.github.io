@@ -110,9 +110,9 @@ ol li
 /* logo */
 #logo
 { width: 766px;
-  height: 125px;
+  height: 225px;
   border-top: 2px solid;
-  border-bottom: 5px solid;
+  border-bottom: 40px solid;
 }
 
 #logo h1, #logo h2
@@ -134,16 +134,18 @@ ol li
 /* navigation menu */
 #menu
 { height: 30px;
-  width: 766px;
-  margin-top: -30px;
+  width:fit-content;
+  margin-top: -40px;
   position: relative;
 }
 
-#menu ul{margin: 0px auto;} 
+#menu ul{margin: 0px auto;}
 
 #menu li
-{ float: left; 
-  margin: 0px 5px 0px 0px; 
+{ 
+  float:left;
+  margin: 5px 5px 5px 0px;
+  position:relative;
   padding: 0px;
   list-style: none;
 } 
@@ -153,7 +155,7 @@ ol li
   float: left; 
   height: 22px;
   text-decoration: none; 
-  padding: 6px 19px 2px 19px;
+  padding: 2px 48px 6px 48px;
 } 
 
 /* main content */
@@ -164,7 +166,7 @@ ol li
 
 /* column 1 - contains sidebar items */
 #column1
-{ width: 206px;
+{ width: 86px;
   margin: 22px 0px 0px 0px;
   float: right;
   padding: 19px 8px 15px 8px;
@@ -217,9 +219,9 @@ ol li
 /* column 2 - page content */
 #column2
 { text-align: justify;
-  width: 508px;
+  width: 80%;
   float: left;
-  padding: 2px 3px 15px 19px;
+  padding: 2px 3px 5px 19px;
 }
 
 #column2 h1
