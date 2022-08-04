@@ -100,7 +100,7 @@ ol li
 
 #footer
 { text-align: center; 
-  border-top: 2px solid;
+  border-top: 12px solid;
 }
 
 #links a, #footer a{text-decoration: none;}
@@ -112,7 +112,7 @@ ol li
 { width: 1006px;
   height: 225px;
   border-top: 2px solid;
-  border-bottom: 5px solid;
+  border-bottom: 35px solid;
 }
 
 #logo h1, #logo h2
@@ -134,26 +134,30 @@ ol li
 /* navigation menu */
 #menu
 { height: 30px;
-  width: 1006px;
-  margin-top: -30px;
+  width:fit-content;
+  margin-top: -35px;
   position: relative;
 }
 
-#menu ul{margin: 0px auto;} 
+#menu ul{margin: 0px auto;}
 
 #menu li
-{ float: left; 
-  margin: 0px 5px 0px 0px; 
+{ 
+  float:left;
+  margin: 0px 5px 0px 0px;
+  position:relative;
   padding: 0px;
   list-style: none;
 } 
+
+
 
 #menu li a 
 { display: block; 
   float: left; 
   height: 22px;
   text-decoration: none; 
-  padding: 2px 19px 6px 19px;
+  padding: 2px 79px 6px 79px;
 } 
 
 /* main content */

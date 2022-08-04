@@ -52,12 +52,12 @@ h1
 }
 
 #menu li a
-{ background: #03084baa;
+{ background: #030852;
   color: #FFFFFF;
 }
 
 #menu li a:hover, #menu li a#selected, #menu li a#selected:hover
-{ background: #03084b;
+{ background: #d4c113;
   color: #FFFFFF;
 } 
 
