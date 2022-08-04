@@ -112,7 +112,7 @@ ol li
 { width: 1006px;
   height: 225px;
   border-top: 2px solid;
-  border-bottom: 35px solid;
+  border-bottom: 40px solid;
 }
 
 #logo h1, #logo h2
@@ -135,7 +135,7 @@ ol li
 #menu
 { height: 30px;
   width:fit-content;
-  margin-top: -35px;
+  margin-top: -40px;
   position: relative;
 }
 
@@ -144,7 +144,7 @@ ol li
 #menu li
 { 
   float:left;
-  margin: 0px 5px 0px 0px;
+  margin: 5px 5px 5px 0px;
   position:relative;
   padding: 0px;
   list-style: none;
