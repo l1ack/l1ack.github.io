@@ -1,25 +1,26 @@
 html{height: 100%;}
-
+/* url(purperstarry.jpeg) no-repeat */
 body
-{ background: #FFFFFF url(back.png) repeat;
+{ background: #c1912a40 ;
+  /* background:#4e443c3c; */
   color: #656F57;
 }
 
 blockquote
-{ background: #FFFFFF;
+{ background: #fffbfb;
   color: #656F57;
   border-color: #83B82E;
 }
 
 #main
-{ /*background: #FFFFFF url(main.png) repeat-y;*/
-  color: #656F57;
+{ /* background: #FFFFFF url(log.png) repeat-y; */
+  color: #e65c17;
 }
 
 #links, #footer
-{ background: #03084b ;
+{ background: #1d034b ;
   color: #FFFFFF;
-  border-color: #656F57;
+  border-color: #200541;
 }
 /* url(linkfoot.png) */
 #links a, #footer a, #links a:hover, #footer a:hover
@@ -32,7 +33,7 @@ blockquote
   background-size: 100% 100%;
   color: #656F57;
   border-top-color: #656F57;
-  border-bottom-color: #d4c113;
+  border-bottom-color: #f2d21c;
 }
 
 #logo h2
@@ -52,12 +53,12 @@ h1
 }
 
 #menu li a
-{ background: #030852;
+{ background: #240d4c;
   color: #FFFFFF;
 }
-
+/* #f4cc04; */
 #menu li a:hover, #menu li a#selected, #menu li a#selected:hover
-{ background: #d4c113;
+{ background: #f2d21c;
   color: #FFFFFF;
 } 
 
@@ -65,11 +66,12 @@ h1
 { background: #FFFFFF;
   color: #222233;
   border-color: #656F57;
+  box-shadow:#2c91ee
 }
 
 #column2 a:hover
 { background: #FFFFFF;
-  color: #2c91ee;
+  color: #7040df;
   border-color: #83B82E;
 }
 

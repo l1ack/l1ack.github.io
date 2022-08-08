@@ -2,7 +2,8 @@
 html{height: 100%;}
 
 body
-{ font-family: verdana, arial, sans-serif;
+{  /*font-family:verdana, fantasy, sans-serif; */
+  font-family: "Times New Roman", KaiTi, STKaiti, sans-serif;
   padding: 0px;
   margin: 0px;
   font-size: 1em;
@@ -10,20 +11,23 @@ body
 
 p
 { margin: 0px;
+  font-size: large;
   padding: 0px 0px 16px 0px;
   line-height: 1.7em;
 }
 
 h1
-{ font-family: arial, sans-serif;
-  font-size: 108%;
+{ font-family:  "Times New Roman", STSong, sans-serif;
+  font-size: large;
+  /* font-size: 108%; */
   letter-spacing: .1em;
 }
 
 h2
-{ margin: 0px;
+{ font-family:  "Times New Roman", STSong, sans-serif;
+  font-size: large;
+  margin: 0px;
   padding: 0px 0px 4px 0px;
-  font-size: 100%;
 }
 
 img{border: 0px;}
@@ -100,7 +104,7 @@ ol li
 
 #footer
 { text-align: center; 
-  border-top: 12px solid;
+  border-top: 2px solid;
 }
 
 #links a, #footer a{text-decoration: none;}
@@ -126,7 +130,7 @@ ol li
 }
 
 #logo h2
-{ font-family: arial, sans-serif;
+{ font-family: "Times New Roman", FangSong, sans-serif;
   padding: 5px 0px 0px 19px;
   font-size: 108%;
 }
@@ -155,6 +159,7 @@ ol li
   float: left; 
   height: 22px;
   text-decoration: none; 
+  font-size:larger;
   padding: 2px 79px 6px 79px;
 } 
 
@@ -245,13 +250,14 @@ ol li
 /* column 2 - page content */
 #column2
 { text-align: justify;
+  font-size: large;
   width: 858px;
   float: left;
   padding: 2px 3px 15px 19px;
 }
 
 #column2 h1
-{ font-family: arial, sans-serif;
+{ font-family: "Times New Roman",SimSuncss,STFangsong,STsong,sans-serif;
   padding: 16px 0px 5px 0px; 
   margin: 0px 0px 12px 0px; 
   border-bottom: 1px solid;
@@ -294,14 +300,14 @@ div.spacer
 
 input, textarea
 { width: 259px; 
-  font-family: verdana, arial, sans-serif;
+  font-family: verdana, arial, KaiTi, STKaiti, sans-serif;
   font-size: 100%;
   border: 1px solid;
   margin: 2px;
 }
 
 .submit
-{ font-family: verdana, arial, sans-serif;
+{ font-family: verdana, arial, KaiTi,sans-serif;
   font-size: 100%; 
   border: 1px solid;
   width: 70px;
