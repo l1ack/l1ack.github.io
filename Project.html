@@ -12,6 +12,15 @@
   <!-- **** colour scheme stylesheet **** -->
     <link rel="stylesheet" type="text/css" href="res/colour.css" />
     <script type="text/javascript">
+	router.get('/newspage',function(req,res,next){
+
+	res.render('news_page',{
+
+	title:"新聞"
+
+	});
+
+	});
     var _gaq = _gaq || [];
 
     _gaq.push(['_setAccount', 'G-PEMD9PB062']);
